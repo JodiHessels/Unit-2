@@ -1,0 +1,186 @@
+import java.util.Scanner;
+
+class ChooseYourOwnAdventure {
+  public static void main(String[] args) {
+    
+    Scanner MyScanner= new Scanner (System.in);
+    
+    //Establish variables
+    String choice1;
+    String choice2;
+    String choice3;
+    String choice4;
+    String choice5;
+    String choice6;
+    String choice7;
+    String choice8;
+    String choice9;
+    String choice10;
+    String choice11;
+    String choice12;
+    
+    //Introduction
+    System.out.println("This is an interactive adventure. Make decisions when prompted to influence the outcome of the story. Good Luck!");
+    System.out.println("															");
+    
+    System.out.println("Once apon a time there was a little boy named Bobby who had a red wagon named Trent. ");
+    System.out.println("Bobby and Trent went on many adventures together, but this is the story of the choco ");
+    System.out.println("chip cookies. One day Bobby was hungry, so hungry, in fact, that he could barely speak, ");
+    System.out.println("all he could mumble was 'choco chip cookies' over and over again. So Bobby, being the ");
+    System.out.println("smart person he was, grabbed Trent by the handle and headed out the door to get the ");
+    System.out.println("ingredients for his famous choco chip cookies. ");
+    
+    System.out.println("Where should he go? (Write either 'store' or 'park' to choose)");
+    choice1= MyScanner.nextLine();
+    
+    //if the player wants to go to the store
+    if (choice1.equals("store")){
+      System.out.println("Bobby headed to the store and browsed through the aisles, but he didn't find any choco chips!");
+      
+      System.out.println("What should Bobby do? (write either 'cry' or 'go home')");
+      choice2= MyScanner.nextLine();
+      
+    //if the player decicdes to cry  
+      if (choice2.equals("cry")){
+        System.out.println("Bobby burst into tears and ran screaming out of the store and into the nearby park. Bobby sat and ");
+        System.out.println("cried on a park bench for an hour. Suddenly a young boy eating blueberries sat next to him and told ");
+        System.out.println("him to stop crying. Bobby told him that he couldn't stop crying until he could find his choco chips. ");
+        System.out.println("The boy shrugged and handed him a blueberry. That's when Bobby had a thought.");
+        
+        System.out.println("Should Bobby have a breakthrough? (Write either 'yes' or 'no')");
+        choice3= MyScanner.nextLine();
+        
+     //if the  player decides to have a breakthrough  
+        if (choice3.equals("yes")){
+        	System.out.println("Bobby had a massive realization. Just because he thought he wanted a choco chip cookie, it doesn't mean ");
+            System.out.println("he always has to stick with the plan! Filled with a new found resolve Bobby jumped off the bench, grabbed Trent, ");
+            System.out.println("and headed back to the store to buy ingredients for blueberry muffins");
+          
+        	System.out.println("Should Bobby buy more blueberries? (Write either 'yes' or 'no')");
+        	choice4= MyScanner.nextLine();
+          
+     //if the player decides to buy more blueberries (end)    
+         if (choice4.equals("yes")){
+   			  	System.out.println("Bobby made a delicious batch of blueberry muffins to share with Trent, and learned a valuable lesson about"); 
+                System.out.println("how nothing will ever be perfect. The end.");
+      		}      
+     //if the user decides not to buy more blueberries (end)
+     		else{
+        		System.out.println("Bobby made blueberry muffins with the singular blueberry given to him by the boy on the park bench. Because of "); 
+                System.out.println("the blueberry shortage, Trent was left without muffins and went on strike for 3 days. The end.");        
+      			}
+      		}
+    //if the user decides not to have a breakthrough (end)
+      	else{
+        	System.out.println("Bobby realized that he wounld never able to leave the bench. He is still sitting there today, sobbing, and murmuring"); 
+            System.out.println("'choco chip cookie'. The end.");
+        	}
+      } 
+    //if the user decides to go home from the store
+      else{
+        System.out.println("Bobby went home and ate carrot sticks, until he realizes that he forgot to bring Trent back with him!");
+        System.out.println("Should he go find Trent? (Write either 'yes' or 'no')");
+        choice5= MyScanner.nextLine();
+    //if the user decides to go out looking for Trent    
+        if (choice5.equals("yes")){
+        	System.out.println("Bobby headed out to find Trent but didn't know where to look. He last saw him at the store, but who knows where a nervous ");
+            System.out.println("wagon goes when he is left alone. Bobby went to the store but didn't find Trent. ");
+        	System.out.println("What should Bobby do? (Write either 'go home' or 'keep searching')");
+        	choice6= MyScanner.nextLine();
+    //if the user decides to stop looking for Trent and go home (end)
+          	if (choice6.equals("go home")){
+       			System.out.println("Bobby went home to find Trent waiting for him! Bobby jumped up and down with glee, but remembered to tell Trent that he should"); 
+                System.out.println("always stay put when he is lost, because Bobby will always be there to come find him and roll him home. The end");
+      			}
+    //if the user decides to continue looking for Trent (end)
+      		else{
+        		System.out.println("Bobby is still out there searching to this day, who knows if he and Trent will ever be reunited. The end.");
+     			}          
+      	}
+    //if the user decides not to go look for Trent (end)
+     	else{
+        	System.out.println("Bobby went back to his carrot sticks and tried to keep Trent off his mind. An hour later Trent found his way back home but ");
+            System.out.println("was so mad that he ran Bobby over the minute he was let through the door. The end");
+        	}
+      }
+    }
+    //if the user decides to the park instead of the store for ingredients
+    else {
+      System.out.println("Bobby scavenged around the park for materials to make his cookies. He stumbled upon pebbles and sticks.");
+      System.out.println("Which should he pick up? (Write 'pebbles' or 'sticks')");
+      choice7= MyScanner.nextLine();
+   	//if the user decides to collect pebbles
+      if (choice7.equals("pebbles")){
+        System.out.println("Bobby gathered some pebbles to take home with him. He put the pebbles he'd collected in Trent, and headed home.");
+        System.out.println("What should he do with the pebbles? (Write 'make cookies' or 'throw them')");
+        choice8= MyScanner.nextLine();
+    //if the user decides to make cookies with the pebbles
+        if (choice8.equals("make cookies")){
+        	System.out.println("Bobby whipped up a batch of his favorite choco chip cookies using the pebbles he collected. They looked perfect"); 
+            System.out.println("but they didn't smell like choco.");
+      	 	System.out.println("Should he eat the cookies (Write 'yes' or 'no')");
+        	choice9= MyScanner.nextLine();
+    //if the user decides to eat the pebble cookies
+          	if (choice9.equals("yes")){
+       			System.out.println("Bobby started munching on the cookies when all of a sudden he felt a sharp pain. 'OUCH!!' shouted Bobby as a tooth"); 
+                System.out.println("came flying out of his mouth.");
+      			System.out.println("Should he go to the dentist? (Write 'yes' or 'no')");
+      			choice10= MyScanner.nextLine();
+    //if the user decides to go to the dentist to fix the tooth (end)
+              	if (choice10.equals("yes")){
+        			System.out.println("Bobby went to the dentist and got a fake tooth put in. Bobby learned a valuable lesson about always following"); 
+                    System.out.println("the recipe exactly and eating only things that are edible. The end.");        		
+      			}
+    //if the user decides not to go to the dentist (end)
+      			else{
+      				System.out.println("Bobby couldn't be bothered to fix his poor aching tooth, instead he powered through and finished all his cookies."); 
+                    System.out.println("Bobby is now missing four teeth but if you ask him, he'll tell you that it was all worth it. The end.");
+      				}
+     		 }
+    //if the user decides not to eat the pebble cookies (end)
+      		else{
+        		System.out.println("Bobby made a resposible decision and decided that he shouldn't take the risk. He was still hungry though, so he decided to"); 
+                System.out.println("eat Trent instead. The end.");      
+     			}
+     		}
+    //if the user decides to throw the pebbles instead of baking with them (end)
+     	else{
+        	System.out.println("Bobby's hangriness got the best of him and he and Trent started throwing the pebbles at the wall. After the house "); 
+            System.out.println("collapsed they decided it might be time to stop. The cost to repair the damage convinced Bobby to stop throwing rocks. The end ");
+      		}
+      }
+   	//if the user decides to collect sticks instead of pebbles
+     else{
+        System.out.println("Bobby collected sticks and put them in Trent. Suddenly a young boy came up to him and tapped him on the shoulder."); 
+        System.out.println("Bobby looked up at the boy and said 'hello?'. 'What are you doing?' asked the boy.");
+        System.out.println("Should he tell the truth or lie? (Write either 'truth' or 'lie')");
+        choice11= MyScanner.nextLine();
+    //if the user decides to tell the truth to the kid
+       	if (choice11.equals("truth")){
+       		System.out.println("'I'm gathering ingredients to make choco chip cookies' responded Bobby. The boy replied 'thought so, would you ");
+            System.out.println("like my choco chip cookie?'");
+       		System.out.println("Should he take the cookie? (Write 'yes' or 'no')");
+     	 	choice12= MyScanner.nextLine();
+    //if the user decides to take the cookie from the boy (end)
+          	if (choice12.equals("yes")){
+        		System.out.println("Bobby took the cookie from the boy and ate it. He was happy. The end.");        	
+      		}
+    //if the user decides not to take the cookie from the boy (end)
+      		else{
+        		System.out.println("Bobby screamed 'I DON'T TAKE FOOD FROM STRANGERS' and ran away. No one has seen him since. The end.");     
+      			}
+      }
+    //if the user decides to lie to the boy (end)
+      	else{
+        	System.out.println("'I am building a log cabin in the forest with these sticks' responded Bobby. 'let me know when you are done,"); 
+            System.out.println("so I can move in' said the boy. The boy had called his bluff and Bobby had no choice but to make the cabin. It "); 
+            System.out.println("is a fine little spot in the woods and he and the boy enjoy it quite a lot. They even added a stove to make choco chip ");
+            System.out.println("cookies. The end.");
+ 
+      }
+
+      }
+
+    }
+  }
+}
